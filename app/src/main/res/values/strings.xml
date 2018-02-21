@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PayInHomeV2</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="action_sign_in">Войти или зарегистрироваться</string>
+    <string name="action_sign_in_short">Войти</string>
+    <string name="error_invalid_email">Этот адрес неверно указан</string>
+    <string name="error_invalid_password">Этот пароль слишком короток</string>
+    <string name="error_incorrect_password">Этот пароль некорректен</string>
+    <string name="error_field_required">Заполните поле</string>
+    <string name="permission_rationale">"Укажите Ваши контакты"
+    </string>
+    <string name="text_news">05.06.2017 Ваш дом подключен к системе автоматического сбора показаний приборов учета подробнее... 05.06.2008 В вашем доме завершен монтаж системы видонаблюдения подробнее...</string>
+    <string name="enter_text">Войти</string>
+    <string name="reg_text">Регистрация</string>
+    <string name="mts_inhome">MTS InHome</string>
+    <string name="pay_in_home">Pay InHome</string>
+</resources>
