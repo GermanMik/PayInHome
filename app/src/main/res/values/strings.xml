@@ -21,7 +21,7 @@
     </string>
     <string name="text_news">05.06.2017 Ваш дом подключен к системе автоматического сбора показаний приборов учета подробнее... 05.06.2008 В вашем доме завершен монтаж системы видонаблюдения подробнее...</string>
     <string name="enter_text">Войти</string>
-    <string name="reg_text">Регистрация</string>
+    <string name="button_text_registration">Регистрация</string>
     <string name="mts_inhome">MTS InHome</string>
     <string name="pay_in_home">Pay InHome</string>
     <string name="text_view_counters">Счетчики</string>
