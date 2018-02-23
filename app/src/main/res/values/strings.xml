@@ -37,4 +37,7 @@
     <string name="text_view_additions">Доп. услуги</string>
     <string name="text_view_help">Help</string>
     <string name="text_view_my_data">Мои данные</string>
+    <string name="text_nav_settings">Settings</string>
+    <string name="text_nav_payment">Платежные реквизиты</string>
+    <string name="text_nav_all_settings">Настройки приложения</string>
 </resources>
