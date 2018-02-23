@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PayInHomeV2</string>
+    <string name="app_name">PayInHome App</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -24,4 +24,17 @@
     <string name="reg_text">Регистрация</string>
     <string name="mts_inhome">MTS InHome</string>
     <string name="pay_in_home">Pay InHome</string>
+    <string name="text_view_counters">Счетчики</string>
+    <string name="text_view_pay_page">Оплата услуг</string>
+    <string name="text_view_chat">Чат</string>
+    <string name="button_chat">Chat Page Button</string>
+    <string name="button_pay">PayPage</string>
+    <string name="button_counters">Counters</string>
+    <string name="button_quotes">Quotes</string>
+    <string name="button_additions">Additions</string>
+    <string name="button_helppage">HelpPage</string>
+    <string name="text_view_quotes">Мои заявки</string>
+    <string name="text_view_additions">Доп. услуги</string>
+    <string name="text_view_help">Help</string>
+    <string name="text_view_my_data">Мои данные</string>
 </resources>
