@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context="ru.android.payinhomev2.FrontScreen">
 
@@ -25,8 +26,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="30dp"
         android:layout_marginTop="30dp"
-        app:srcCompat="@drawable/ic_launcher_web"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/ic_launcher_web" />
 
     <Button
         android:id="@+id/reg_btn"
@@ -45,6 +46,36 @@
         android:shadowColor="@android:color/black"
         android:shadowRadius="1"
         android:text="@string/enter_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="TestThemeView" />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/radio_theme_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="LightTheme" />
+
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/radio_theme_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center"
+            android:text="DarkTheme" />
+    </RadioGroup>
 
 
 </LinearLayout>
