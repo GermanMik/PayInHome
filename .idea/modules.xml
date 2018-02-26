@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PayInHomeV2.iml" filepath="$PROJECT_DIR$/PayInHomeV2.iml" />
-      <module fileurl="file://H:\Documents\AndroidProjects\PayInHomeV2\PayInHomeV2.iml" filepath="H:\Documents\AndroidProjects\PayInHomeV2\PayInHomeV2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
