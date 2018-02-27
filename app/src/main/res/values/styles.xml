@@ -2,7 +2,7 @@
     <!--https://material.io/color/#!/?view.left=0&view.right=0&primary.color=FFCCBC&secondary.color=FF5722-->
 
     <!-- Light colors application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorPrimaryDark">@color/primaryDarkColor</item>
@@ -12,7 +12,7 @@
         <item name="android:textColorSecondary">@color/secondaryTextColor</item>
     </style>
     <!-- Red colors application theme. -->
-    <style name="RedTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="DarkTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/secondaryColor</item>
         <item name="colorPrimaryDark">@color/secondaryDarkColor</item>

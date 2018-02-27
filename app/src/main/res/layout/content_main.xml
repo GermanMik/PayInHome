@@ -48,6 +48,7 @@
                         android:layout_height="72dp"
                         android:layout_margin="20dp"
                         android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/button_counters"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/counters" />
@@ -58,6 +59,7 @@
                         android:layout_height="72dp"
                         android:layout_margin="20dp"
                         android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/button_pay"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/pay" />
@@ -68,6 +70,7 @@
                         android:layout_height="72dp"
                         android:layout_margin="20dp"
                         android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/button_chat"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/chat" />
@@ -84,6 +87,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/text_view_counters"
                         android:gravity="center_horizontal"
                         android:text="@string/text_view_counters" />
@@ -93,6 +97,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/text_view_pay_page"
                         android:gravity="center_horizontal"
                         android:text="@string/text_view_pay_page" />
@@ -102,6 +107,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/text_view_chat"
                         android:gravity="center_horizontal"
                         android:text="@string/text_view_chat" />
@@ -120,6 +126,7 @@
                         android:layout_height="72dp"
                         android:layout_margin="20dp"
                         android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/button_quotes"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/quotes" />
@@ -130,6 +137,7 @@
                         android:layout_height="72dp"
                         android:layout_margin="20dp"
                         android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/button_additions"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/addit" />
@@ -140,6 +148,7 @@
                         android:layout_height="72dp"
                         android:layout_margin="20dp"
                         android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/button_helppage"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/last" />
@@ -155,6 +164,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
                         android:gravity="center_horizontal"
                         android:text="@string/text_view_quotes" />
 
@@ -163,6 +173,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
                         android:gravity="center_horizontal"
                         android:text="@string/text_view_additions" />
 
@@ -171,6 +182,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
                         android:gravity="center_horizontal"
                         android:text="@string/text_view_help" />
 

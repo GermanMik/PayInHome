@@ -15,7 +15,7 @@ public class FrontScreen extends AppCompatActivity implements View.OnClickListen
     public static final String APP_PREFERENCES_THEME = "THEME";
     Button signbtn;
     Button regbtn;
-    SharedPreferences sharedSettings;
+    public static SharedPreferences sharedSettings;
     Editor editor;
 
     @Override
@@ -25,7 +25,7 @@ public class FrontScreen extends AppCompatActivity implements View.OnClickListen
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_front_screen);
-        signbtn =  findViewById(R.id.enter_btn);
+        signbtn = findViewById(R.id.enter_btn);
         signbtn.setOnClickListener(this);
 
         sharedSettings = getSharedPreferences(APP_PREFERENCES_THEME, Context.MODE_PRIVATE);
@@ -51,8 +51,6 @@ public class FrontScreen extends AppCompatActivity implements View.OnClickListen
         switch (view.getId()) {
             case R.id.radio_theme_light:
                 if (checked)
-
-
                     editor = sharedSettings.edit();
                 editor.putInt(APP_PREFERENCES_THEME, 0);
                 editor.apply();
