@@ -1,5 +1,6 @@
 package ru.android.payinhomev2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -10,6 +11,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import static ru.android.payinhomev2.FrontScreen.APP_PREFERENCES_THEME;
 import static ru.android.payinhomev2.FrontScreen.sharedSettings;
@@ -17,23 +21,36 @@ import static ru.android.payinhomev2.FrontScreen.sharedSettings;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     Integer theme;
+    ImageView countersImage;
+    ImageButton countersBtn;
+    ImageButton payBtn;
+    ImageButton chatBtn;
+    ImageButton queryBtn;
+    ImageButton additBtn;
+    ImageButton helpBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Получаем через Sharedpref инт с идентификатором темы и устанавливаем ее
         if (FrontScreen.sharedSettings.contains(APP_PREFERENCES_THEME)) {
             theme = sharedSettings.getInt(APP_PREFERENCES_THEME, 1);
-        }else{theme = sharedSettings.getInt(APP_PREFERENCES_THEME, 1);}
+        } else {
+            theme = sharedSettings.getInt(APP_PREFERENCES_THEME, 1);
+        }
         // Если в данных значени 1 то ставим темную тему
         if (theme == 1) {
             setTheme(R.style.DarkTheme);
         } else {
             setTheme(R.style.AppTheme);
-
         }
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        countersBtn = findViewById(R.id.counters_button);
+        payBtn = findViewById(R.id.pay_button);
+        chatBtn = findViewById(R.id.chat_button);
+        queryBtn = findViewById(R.id.quotes_button);
+        additBtn = findViewById(R.id.addit_button);
+        helpBtn = findViewById(R.id.last_button);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -43,8 +60,65 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setNavigationItemSelectedListener(this);}
+
+    public void onClick(View v) {
+        View.OnClickListener countersBtn = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, QueryPage.class);
+                startActivity(intent);
+            }
+        };
+        View.OnClickListener payBtn = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PayType.class);
+                startActivity(intent);
+            }
+        };
+        View.OnClickListener chatBtn = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ChatPage.class);
+                startActivity(intent);
+            }
+        };
+        View.OnClickListener queryBtn = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, QueryPage.class);
+                startActivity(intent);
+            }
+        };
+        View.OnClickListener additBtn = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AdditPage.class);
+                startActivity(intent);
+            }
+        };
+        View.OnClickListener helpBtn = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, HelpPage.class);
+                startActivity(intent);
+            }
+        };
+
+//        Intent intent;
+//        switch (v.getId()) {
+//                     case R.id.textView:
+//                intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://dom.gosuslugi.ru/#!/newsView?newsId=778c147b-0ac8-477c-adb7-13469126106c&fromPlace=newsSearch&regionGuid=5c8b06f1-518e-496e-b683-7bf917e0d70b&fromDate=26.04.2017&toDate=26.10.2017"));
+//                startActivity(intent);
+//                break;
+//
+//        }
+
     }
+
+
+
 
     @Override
     public void onBackPressed() {
