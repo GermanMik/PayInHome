@@ -18,11 +18,19 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //TODO:Sharedpref Mainactivity
+        // Получаем через Sharedpref инт с идентификатором темы и устанавливаем ее
         SharedPreferences settings = getSharedPreferences(APP_PREFERENCES_THEME, 0);
         int theme = settings.getInt("theme", 0);
-
-        setTheme(theme);
-
+        try {
+            if (theme == 1) {
+                setTheme(R.style.AppTheme);
+            } else {
+                setTheme(R.style.RedTheme);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -91,7 +99,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_counters) {
 
-        } else if (id == R.id.nav_addition)  {
+        } else if (id == R.id.nav_addition) {
 
         }
 

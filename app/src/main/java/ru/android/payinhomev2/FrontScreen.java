@@ -12,12 +12,10 @@ public class FrontScreen extends AppCompatActivity implements View.OnClickListen
     public static final String APP_PREFERENCES_THEME = "THEME";
     Button signbtn;
     Button regbtn;
-    String pref;
     SharedPreferences sharedSettings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
 //        regbtn = (Button) findViewById(R.id.reg_btn);
 //        regbtn.setOnClickListener(this);
 
@@ -39,11 +37,10 @@ public class FrontScreen extends AppCompatActivity implements View.OnClickListen
     }
 
     public void onRadioButtonClicked(View view) {
-        // Is the button now checked?
-
+        //TODO: SharedPref Front Activity
+        // Кнопка выбрана?
         boolean checked = ((RadioButton) view).isChecked();
-
-        // Check which radio button was clicked
+        // проверяем какая кнопка выбрана
         switch (view.getId()) {
             case R.id.radio_theme_light:
                 if (checked)
@@ -57,7 +54,6 @@ public class FrontScreen extends AppCompatActivity implements View.OnClickListen
                 if (checked)
                     sharedSettings = getSharedPreferences(APP_PREFERENCES_THEME, 0);
                 editor = sharedSettings.edit();
-                //"theme" is the key sTheme is the value you're saving
                 editor.putInt("theme", 1);
                 editor.commit();
                     break;
