@@ -1,5 +1,6 @@
 package ru.android.payinhomev2;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -8,21 +9,27 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 
+import static android.content.SharedPreferences.Editor;
+
 public class FrontScreen extends AppCompatActivity implements View.OnClickListener {
     public static final String APP_PREFERENCES_THEME = "THEME";
     Button signbtn;
     Button regbtn;
     SharedPreferences sharedSettings;
+    Editor editor;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
 //        regbtn = (Button) findViewById(R.id.reg_btn);
 //        regbtn.setOnClickListener(this);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_front_screen);
-        signbtn = (Button) findViewById(R.id.enter_btn);
+        signbtn =  findViewById(R.id.enter_btn);
         signbtn.setOnClickListener(this);
+
+        sharedSettings = getSharedPreferences(APP_PREFERENCES_THEME, Context.MODE_PRIVATE);
+
     }
 
 
@@ -44,19 +51,19 @@ public class FrontScreen extends AppCompatActivity implements View.OnClickListen
         switch (view.getId()) {
             case R.id.radio_theme_light:
                 if (checked)
-                sharedSettings = getSharedPreferences(APP_PREFERENCES_THEME, 0);
-                SharedPreferences.Editor editor = sharedSettings.edit();
-                editor.putInt("theme", 0);
-                editor.commit();
+
+
+                    editor = sharedSettings.edit();
+                editor.putInt(APP_PREFERENCES_THEME, 0);
+                editor.apply();
 
                 break;
             case R.id.radio_theme_dark:
                 if (checked)
-                    sharedSettings = getSharedPreferences(APP_PREFERENCES_THEME, 0);
-                editor = sharedSettings.edit();
-                editor.putInt("theme", 1);
-                editor.commit();
-                    break;
+                    editor = sharedSettings.edit();
+                editor.putInt(APP_PREFERENCES_THEME, 1);
+                editor.apply();
+                break;
         }
     }
 }
