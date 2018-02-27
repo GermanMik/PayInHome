@@ -13,9 +13,9 @@ import static android.content.SharedPreferences.Editor;
 
 public class FrontScreen extends AppCompatActivity implements View.OnClickListener {
     public static final String APP_PREFERENCES_THEME = "THEME";
+    public static SharedPreferences sharedSettings;
     Button signbtn;
     Button regbtn;
-    public static SharedPreferences sharedSettings;
     Editor editor;
 
     @Override
@@ -27,14 +27,12 @@ public class FrontScreen extends AppCompatActivity implements View.OnClickListen
         setContentView(R.layout.activity_front_screen);
         signbtn = findViewById(R.id.enter_btn);
         signbtn.setOnClickListener(this);
-
         sharedSettings = getSharedPreferences(APP_PREFERENCES_THEME, Context.MODE_PRIVATE);
-
     }
-
 
     @Override
     public void onClick(View v) {
+        //запрашиваем ID кнопки и предаем интент на запуск активити
         switch (v.getId()) {
             case R.id.enter_btn:
                 Intent intent = new Intent(this, MainActivity.class);
@@ -44,7 +42,6 @@ public class FrontScreen extends AppCompatActivity implements View.OnClickListen
     }
 
     public void onRadioButtonClicked(View view) {
-        //TODO: SharedPref Front Activity
         // Кнопка выбрана?
         boolean checked = ((RadioButton) view).isChecked();
         // проверяем какая кнопка выбрана
@@ -54,7 +51,6 @@ public class FrontScreen extends AppCompatActivity implements View.OnClickListen
                     editor = sharedSettings.edit();
                 editor.putInt(APP_PREFERENCES_THEME, 0);
                 editor.apply();
-
                 break;
             case R.id.radio_theme_dark:
                 if (checked)

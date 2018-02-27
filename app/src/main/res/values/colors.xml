@@ -13,8 +13,8 @@
     <color name="secondaryColor">#d50000</color>
     <color name="secondaryLightColor">#ff5131</color>
     <color name="secondaryDarkColor">#9b0000</color>
-    <color name="primaryTextColor">#ffffff</color>
-    <color name="secondaryTextColor">#ffffff</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#000000</color>
 
 
     <color name="primaryColorDark">#212121</color>
@@ -23,6 +23,6 @@
     <color name="secondaryColorDark">#dd2c00</color>
     <color name="secondaryLightColorDark">#ff6434</color>
     <color name="secondaryDarkColorDark">#a30000</color>
-    <color name="primaryTextColorDark">#ffffff</color>
-    <color name="secondaryTextColorDark">#ffffff</color>
+    <color name="primaryTextColorDark">#000000</color>
+    <color name="secondaryTextColorDark">#000000</color>
 </resources>
