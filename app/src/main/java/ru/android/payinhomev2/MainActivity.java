@@ -13,7 +13,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 import static ru.android.payinhomev2.FrontScreen.APP_PREFERENCES_THEME;
 import static ru.android.payinhomev2.FrontScreen.sharedSettings;
@@ -21,7 +20,6 @@ import static ru.android.payinhomev2.FrontScreen.sharedSettings;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     Integer theme;
-    ImageView countersImage;
     ImageButton countersBtn;
     ImageButton payBtn;
     ImageButton chatBtn;
@@ -60,13 +58,14 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);}
+        navigationView.setNavigationItemSelectedListener(this);
+    }
 
     public void onClick(View v) {
         View.OnClickListener countersBtn = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, QueryPage.class);
+                Intent intent = new Intent(MainActivity.this, CountersData.class);
                 startActivity(intent);
             }
         };
@@ -116,8 +115,6 @@ public class MainActivity extends AppCompatActivity
 //        }
 
     }
-
-
 
 
     @Override
