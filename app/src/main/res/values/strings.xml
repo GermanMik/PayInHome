@@ -41,4 +41,11 @@
     <string name="text_nav_payment">Платежные реквизиты</string>
     <string name="text_nav_all_settings">Настройки приложения</string>
     <string name="todo">TODO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_back_button_image">BackButtonImage</string>
+    <string name="string_counters_data">Показания счетчиков</string>
+    <string name="strings_button_current_counters_data">Текущие</string>
+    <string name="strings_button_counters_all_data">Общие</string>
 </resources>
