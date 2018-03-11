@@ -48,4 +48,11 @@
     <string name="string_counters_data">Показания счетчиков</string>
     <string name="strings_button_current_counters_data">Текущие</string>
     <string name="strings_button_counters_all_data">Общие</string>
+    <string name="strings_cold_water">Холодная вода</string>
+    <string name="strings_000001">000001</string>
+    <string name="strings_ok">Ok</string>
+    <string name="strings_Send">Отправить</string>
+    <string name="strings_gas">Газ</string>
+    <string name="strings_electricity">Электроэнергия</string>
+    <string name="strings_hot_water">Горячая вода</string>
 </resources>
