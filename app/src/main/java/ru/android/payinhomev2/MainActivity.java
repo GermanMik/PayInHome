@@ -59,63 +59,44 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-    }
-
-    public void onClick(View v) {
-        View.OnClickListener countersBtn = new View.OnClickListener() {
-            @Override
+        //Set OnClicklisteners on ImageButtons
+        countersBtn.setOnClickListener(new ImageButton.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CountersData.class);
                 startActivity(intent);
             }
-        };
-        View.OnClickListener payBtn = new View.OnClickListener() {
-            @Override
+        });
+        payBtn.setOnClickListener(new ImageButton.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, PayType.class);
                 startActivity(intent);
             }
-        };
-        View.OnClickListener chatBtn = new View.OnClickListener() {
-            @Override
+        });
+        chatBtn.setOnClickListener(new ImageButton.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ChatPage.class);
                 startActivity(intent);
             }
-        };
-        View.OnClickListener queryBtn = new View.OnClickListener() {
-            @Override
+        });
+        queryBtn.setOnClickListener(new ImageButton.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, QueryPage.class);
                 startActivity(intent);
             }
-        };
-        View.OnClickListener additBtn = new View.OnClickListener() {
-            @Override
+        });
+        additBtn.setOnClickListener(new ImageButton.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AdditPage.class);
                 startActivity(intent);
             }
-        };
-        View.OnClickListener helpBtn = new View.OnClickListener() {
-            @Override
+        });
+        helpBtn.setOnClickListener(new ImageButton.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, HelpPage.class);
                 startActivity(intent);
             }
-        };
-
-//        Intent intent;
-//        switch (v.getId()) {
-//                     case R.id.textView:
-//                intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://dom.gosuslugi.ru/#!/newsView?newsId=778c147b-0ac8-477c-adb7-13469126106c&fromPlace=newsSearch&regionGuid=5c8b06f1-518e-496e-b683-7bf917e0d70b&fromDate=26.04.2017&toDate=26.10.2017"));
-//                startActivity(intent);
-//                break;
-//
-//        }
-
+        });
     }
-
 
     @Override
     public void onBackPressed() {
