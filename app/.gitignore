@@ -1,1 +1,4 @@
 /build
+/.idea/*
+gradlew
+gradlew.bat

@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     tools:context="ru.android.payinhomev2.FrontScreen">
 
 
@@ -54,9 +56,10 @@
         android:text="TestThemeView" />
 
     <RadioGroup
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:orientation="vertical">
 
         <RadioButton
             android:onClick="onRadioButtonClicked"

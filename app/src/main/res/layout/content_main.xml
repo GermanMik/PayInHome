@@ -16,13 +16,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="56dp"
                 android:background="@android:color/holo_red_dark"
                 android:text="@string/text_view_my_data"
                 android:textColor="@android:color/white" />
@@ -30,9 +29,7 @@
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/white"
-
-                >
+                android:background="@android:color/white">
 
 
                 <TableRow
@@ -46,7 +43,7 @@
                         android:id="@+id/counters_button"
                         android:layout_width="72dp"
                         android:layout_height="72dp"
-                        android:layout_margin="20dp"
+                        android:layout_margin="16dp"
                         android:layout_weight="1"
                         android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/button_counters"
@@ -57,7 +54,7 @@
                         android:id="@+id/pay_button"
                         android:layout_width="72dp"
                         android:layout_height="72dp"
-                        android:layout_margin="20dp"
+                        android:layout_margin="16dp"
                         android:layout_weight="1"
                         android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/button_pay"
@@ -68,7 +65,7 @@
                         android:id="@+id/chat_button"
                         android:layout_width="72dp"
                         android:layout_height="72dp"
-                        android:layout_margin="20dp"
+                        android:layout_margin="16dp"
                         android:layout_weight="1"
                         android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/button_chat"
@@ -124,7 +121,7 @@
                         android:id="@+id/quotes_button"
                         android:layout_width="72dp"
                         android:layout_height="72dp"
-                        android:layout_margin="20dp"
+                        android:layout_margin="16dp"
                         android:layout_weight="1"
                         android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/button_quotes"
@@ -135,7 +132,7 @@
                         android:id="@+id/addit_button"
                         android:layout_width="72dp"
                         android:layout_height="72dp"
-                        android:layout_margin="20dp"
+                        android:layout_margin="16dp"
                         android:layout_weight="1"
                         android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/button_additions"
@@ -146,7 +143,7 @@
                         android:id="@+id/last_button"
                         android:layout_width="72dp"
                         android:layout_height="72dp"
-                        android:layout_margin="20dp"
+                        android:layout_margin="16dp"
                         android:layout_weight="1"
                         android:background="@android:drawable/screen_background_light_transparent"
                         android:contentDescription="@string/button_helppage"
@@ -191,7 +188,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="20dp" />
+                android:layout_height="8dp" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -199,7 +196,7 @@
                 android:layout_height="match_parent"
                 android:background="@android:color/white"
                 android:backgroundTintMode="screen"
-                android:padding="20dp"
+                android:padding="16dp"
                 android:text="@string/text_news"
                 android:textColor="@android:color/black" />
 
